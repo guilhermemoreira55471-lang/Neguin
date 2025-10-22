@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stop - Jogo de Letras</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div class="container">
+
+        <header>
+            <h1>Stop – Roleta de Letras</h1>
+        </header>
+
+        <section class="roleta-section">
+            <canvas id="wheelCanvas" width="300" height="300"></canvas>
+            <div id="pointer">&#9650;</div>
+            <div id="selectedLetter">?</div>
+            <button id="spinButton">Sortear Letra</button>
+            <div id="timerDisplay">Tempo: 60s</div>
+        </section>
+
+
+        <section class="respostas-section">
+            <h2>Respostas</h2>
+            <div class="player">
+                <div class="categoria-inputs" id="inputsArea"></div>
+            </div>
+            <button id="scoreButton">Calcular Pontuação</button>
+        </section>
+
+        <section id="resultSection">
+            <h2>Resultado</h2>
+            <div id="resultsContainer"></div>
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
